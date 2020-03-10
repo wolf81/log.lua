@@ -72,7 +72,7 @@ for i, x in ipairs(modes) do
                         os.date("%H:%M:%S"),
                         log.usecolor and "\27[0m" or "",
                         lineinfo,
-                        msg))
+                        msg) .. '\n')
     io.flush()
 
     -- Output to log file
